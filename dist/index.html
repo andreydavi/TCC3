@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zenite - Agência de Viagens</title>
   <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/4e81cabff5.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4e81cabff5.js" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans">
+
+<body class="font-sans dark:bg-black">
 
   <!-- HEADER -->
   <nav id="navbar" class="bg-black/95 text-white h-dvh w-full absolute z-50 hidden">
-    <div class="flex w-full justify-end px-5 py-2" id="close-navbar"><a class="font-semibold text-3xl cursor-pointer">x</a></div>
+    <div class="flex w-full justify-end px-5 py-2" id="close-navbar"><a
+        class="font-semibold text-3xl cursor-pointer">x</a></div>
     <div class="flex flex-col items-center justify-center gap-12 h-full">
       <a href="#quemSomos" class="hover:text-gray-300 text-xl px-6 item-menu cursor-pointer">Quem Somos</a>
       <a href="#nossoApp" class="hover:text-gray-300 text-xl px-6 item-menu cursor-pointer">Nosso App</a>
@@ -24,9 +27,10 @@
     <div class="flex items-center space-x-2">
       <h1 class="text-2xl font-bold">ZENITE</h1>
       <div class="w-20">
-        <img class=" md:object-center right-10 md:right-0" src="./images/a01d18f5-34d5-4e24-b0ef-b967beaff0d9.png" alt="">
+        <img class=" md:object-center right-10 md:right-0" src="./images/a01d18f5-34d5-4e24-b0ef-b967beaff0d9.png"
+          alt="">
       </div>
-    </div>    
+    </div>
 
     <!-- Navegação -->
     <nav id="navbar" class="hidden w-full lg:flex flex-row justify-around font-semibold items-center">
@@ -34,18 +38,20 @@
         <a href="#quemSomos" class="hover:text-gray-300 text-xl px-6 item-menu">Quem Somos</a>
         <a href="#nossoApp" class="hover:text-gray-300 text-xl px-6 item-menu">Nosso App</a>
         <a href="#diferencial" class="hover:text-gray-300 text-xl px-6 item-menu">Diferencial</a>
+        <a href="#destinos" class="hover:text-gray-300 text-xl px-6 item-menu">Destinos</a>
       </div>
     </nav>
     <div class="flex flex-row gap-4">
-    <button class="" id="btnTheme">
-      <i class="fa-solid fa-circle-half-stroke fa-3x"></i>
-    </button>
-    <button class="z-50 lg:hidden" id="open-navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
+      <button class="" id="btnTheme">
+        <i class="fa-solid fa-circle-half-stroke fa-3x"></i>
+      </button>
+      <button class="z-50 lg:hidden" id="open-navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="relative h-dvh bg-neutral-400 pt-22 bg-blend-multiply w-full overflow-hidden bg-[url('../images/pexels-freestockpro-1004584.jpg')] bg-no-repeat bg-cover text-white">
+  <section
+    class="relative h-dvh bg-neutral-400 pt-22 bg-blend-multiply w-full overflow-hidden bg-[url('../images/pexels-freestockpro-1004584.jpg')] bg-no-repeat bg-cover text-white">
     <div class="mx-auto flex flex-col h-full items-center justify-center px-10 text-center">
       <div class="max-w-xl">
         <h2 class="text-6xl font-extrabold mb-10 flex items-center justify-center">Viajar nunca foi tão fácil</h2>
@@ -64,29 +70,30 @@
 
   <!-- QUEM SOMOS -->
   <section class="w-full relative py-20 px-8 md:px-16 dark:bg-black dark:text-white" id="quemSomos">
-    <div class="shadow-xl/30 dark:shadow-gray-500 dark:border-gray-500 border-2 rounded-2xl p-5 border-gray-200 grid grid-flow-row grid-cols-1 md:grid-cols-2 items-center gap-5">
+    <div
+      class="shadow-xl/30 dark:shadow-gray-500 dark:border-gray-500 border-2 rounded-2xl p-5 border-gray-200 grid grid-flow-row grid-cols-1 md:grid-cols-2 items-center gap-5">
       <div class="container mx-auto md:space-x-12">
         <div class="flex flex-col items-center pb-5 z-10">
-        <h2 class="text-5xl font-bold mb-6 text-black dark:text-white ">Quem somos</h2>
-        <p class="pt-5 text-gray-700 dark:text-white mb-4 text-xl">
-          Somos uma agência de viagens digital que transforma sonhos em experiências inesquecíveis.
-          Conectamos pessoas a destinos, culturas e aventuras com tecnologia, praticidade e atendimento de qualidade.
-        </p>
-        <p class="text-gray-700 dark:text-white mb-4 text-xl">
-          Mais do que deslocar, acreditamos que viajar é criar memórias e viver momentos únicos.
-          Nossa equipe de apaixonados por turismo oferece soluções personalizadas para cada tipo de 
-          viagem:
-          em família, a trabalho, romântica ou de aventura.
-        </p>
-        <p class="text-gray-700 dark:text-white text-xl">
-          Somos parceiros de jornada, oferecendo suporte antes, durante e depois da viagem,
-          garantindo tranquilidade e confiança a cada passo do caminho.
-        </p>
+          <h2 class="text-5xl font-bold mb-6 text-black dark:text-white ">Quem somos</h2>
+          <p class="pt-5 text-gray-700 dark:text-white mb-4 text-xl">
+            Somos uma agência de viagens digital que transforma sonhos em experiências inesquecíveis.
+            Conectamos pessoas a destinos, culturas e aventuras com tecnologia, praticidade e atendimento de qualidade.
+          </p>
+          <p class="text-gray-700 dark:text-white mb-4 text-xl">
+            Mais do que deslocar, acreditamos que viajar é criar memórias e viver momentos únicos.
+            Nossa equipe de apaixonados por turismo oferece soluções personalizadas para cada tipo de
+            viagem:
+            em família, a trabalho, romântica ou de aventura.
+          </p>
+          <p class="text-gray-700 dark:text-white text-xl">
+            Somos parceiros de jornada, oferecendo suporte antes, durante e depois da viagem,
+            garantindo tranquilidade e confiança a cada passo do caminho.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class=" flex items-center">
-      <img class="h-auto rounded-3xl p-[10px]" src="./images/img2.jpg" alt="">
-    </div>
+      <div class=" flex items-center">
+        <img class="h-auto rounded-3xl p-[10px]" src="./images/img2.jpg" alt="">
+      </div>
     </div>
   </section>
 
@@ -107,7 +114,8 @@
 
       <div class="bg-gray-600 p-6 rounded-lg shadow-sm text-gray-800">
         <h3 class="text-xl font-semibold mb-2">Ferramentas</h3>
-        <p>Utilize ferramentas úteis como conversor de moedas, check-list e calendário para planejar melhor sua viagem.</p>
+        <p>Utilize ferramentas úteis como conversor de moedas, check-list e calendário para planejar melhor sua viagem.
+        </p>
       </div>
     </div>
   </section>
@@ -121,41 +129,183 @@
           Mais do que vender viagens, oferecemos experiências completas.
         </p>
         <p class="text-gray-700 dark:text-white mb-4">
-          Nossa proposta é simplificar cada etapa da sua jornada, usando a tecnologia para trazer praticidade, segurança e economia.
+          Nossa proposta é simplificar cada etapa da sua jornada, usando a tecnologia para trazer praticidade, segurança
+          e economia.
         </p>
         <p class="text-gray-700 dark:text-white">
-          Com a nossa plataforma, você tem liberdade para explorar o mundo no seu ritmo, do planejamento até a volta para casa.
+          Com a nossa plataforma, você tem liberdade para explorar o mundo no seu ritmo, do planejamento até a volta
+          para casa.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Carrossel -->
-   <div class="relative w-full max-w-xl mx-auto rounded-2xl overflow-hidden">
-  <div id="carousel" class="flex gap-5 transition-transform duration-500 ease-in-out">
-    <!-- Slide 1 -->
-    <div class="w-full flex-shrink-0">
-      <img src="./images/image (2).png" class="w-full rounded-2xl" alt="Slide 1" />
+  <!-- CARROSSEL -->
+
+  <!-- 🐾 Seção do Carrossel Infinito -->
+  <section class="relative w-full group py-10 bg-white flex flex-col items-start" id="destinos">
+    <h2 class="text-4xl font-bold mb-6 text-black pb-7 mx-16 w-xl text-start">Conheça destinos incríveis em nossos
+      conteúdos exclusivos</h2>
+
+    <!-- Botão Esquerda -->
+
+    <button id="btn-esquerda"
+      class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow z-50
+           opacity-0 pointer-events-none transition-opacity duration-200 group-hover:opacity-100 group-hover:pointer-events-auto"
+      aria-label="Anterior">
+      &#10094;
+    </button>
+
+    <!-- Faixa de imagens -->
+    <div id="carrossel" class="flex isolate no-scrollbar overflow-x-clip z-0 scroll-smooth px-0 gap-4 relative">
+      <!-- Cada imagem dentro de um wrapper que permite transbordar -->
+      <div class="relative flex-shrink-0 z-50 ">
+        <img src="./images/aruba.avif"
+          class="w-[360px] h-[230px] rounded-2xl duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/balneario.jpg"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/buenosaires.jpg"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/rio.jpg"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/psg.avif"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <!-- Duplicadas para loop infinito -->
+      <div class="relative flex-shrink-0">
+        <img src="./images/porto.jpg"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/maceio.jpg"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/grecia.png"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/fortaleza.webp"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
+
+      <div class="relative flex-shrink-0">
+        <img src="./images/disney.jpg"
+          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      </div>
     </div>
-    <!-- Slide 2 -->
-    <div class="w-full flex-shrink-0">
-      <img src="./images/image (1).png" class="w-full rounded-2xl" alt="Slide 2" />
+
+    <!-- Botão Direita -->
+
+    <button id="btn-direita"
+      class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow z-50 opacity-0 pointer-events-none transition-opacity duration-200 group-hover:opacity-100 group-hover:pointer-events-auto"
+      aria-label="Próximo"> &#10095;
+    </button>
+  </section>
+
+  <div id="newsletter" class="grid grid-cols-1 place-content-evenly lg:grid-cols-2 mx-6 lg:mx-10 rounded-xl bg-gray-200">
+    <div class="px-8 lg:px-16 py-8 lg:py-20 gap-7 flex flex-col">
+      <h1 class="text-blue-900 font-bold text-2xl">Assine nossa newsletter e receba as ofertas da Zenite</h1>
+      <div class="flex flex-col md:flex-row gap-3">
+        <input type="text"
+          class="border ps-3 py-1 md:py-0 border-gray-400 bg-white placeholder:text-gray-700 rounded-md"
+          placeholder="Nome">
+        <input type="text"
+          class="border ps-3 py-1 md:py-0 border-gray-400 bg-white placeholder:text-gray-700 rounded-md"
+          placeholder="E-mail">
+        <button class="bg-sky-300 text-black font-semibold py-2 md:py-3 px-4 rounded-xl">Assinar</button>
+      </div>
+      <p class="text-sm items-center"><input type="checkbox"> Concordo em receber comunicações, ofertas e compartilhar
+        meus dados pessoais com a Zenite. Para mais informações, consulte as <span
+          class="cursor-pointer hover:underline text-blue-500">políticas de privacidade</span>.</p>
     </div>
-    <!-- Slide 3 -->
-    <div class="w-full flex-shrink-0">
-      <img src="./images/image.png" class="w-full rounded-2xl" alt="Slide 3" />
+    <div class="bg-white mx-8 lg:mx-16 lg:py-0 py-8 mb-8 lg:my-16 rounded-xl flex flex-col justify-evenly px-6">
+      <img src="./images/discount.png" class="size-5 md:size-8" alt="">
+      <h1 class="font-bold text-blue-900 text-xl md:text-2xl">Viagens de até R$ 1 mil para destinos inesquecíveis</h1>
+      <p class="text-sm md:text-base">Conheça destinos de praia, conecte-se com a natureza, mergulhe em novas culturas e
+        divirta-se em grandes
+        cidades</p>
     </div>
   </div>
 
-  <!-- Botões -->
-  <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full">‹</button>
-  <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full">›</button>
-</div>
+  <div id="rodape" class="flex flex-col items-center lg:items-start gap-5 my-10 mx-20">
+    <h1 class="font-bold text-2xl">Formas de Pagamentos</h1>
+    <div class="flex lg:flex-row flex-col gap-5 md:gap-14 items-center">
+      <div class="flex flex-col">
+        <p class="font-semibold text-gray-700">Cartão de Crédito</p>
+        <div class="flex flex-row">
+          <img src="./images/GhostVisa.svg" alt="">
+          <img src="./images/GhostMastercard.svg" alt="">
+          <img src="./images/GhostElo.svg" alt="">
+          <img src="./images/GhostAmex.svg" alt="">
+          <img src="./images/GhostDiners.svg" alt="">
+        </div>
+        <p class="text-gray-600">Até 2 cartões da mesma titularidade</p>
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="font-semibold text-gray-700">Outras formas</p>
+        <div class="flex flex-row gap-2">
+          <img src="./images/pix.svg" alt="">
+          <img src="./images/nuPay.svg" alt="">
+          <p class="text-xs text-gray-500">até 24x para clientes Nubank</p>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-700">Formas exclusivas nas lojas CVC</p>
+        <div class="flex flex-row gap-4 text-gray-600">
+          <p class="uppercase">fgts</p>
+          <p>+2 cartões de crédito</p>
+          <p>Boleto Parcelado</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-b border-gray-400 mt-5"></div>
+    <div class="flex flex-col gap-10 lg:gap-0 text-center lg:text-start lg:flex-row justify-between items-center">
+      <div class="flex flex-col gap-1">
+        <h1 class="font-semibold text-lg">Contato</h1>
+        <p class="flex items-center gap-1"><i class="fa-solid fa-envelope"></i>contato@zenite.com</p>
+        <p class="flex items-center gap-1"><i class="fa-solid fa-phone"></i>(11) 9 9999-9999</p>
+        <p class="flex items-center gap-1"><i class="fa-solid fa-location-dot"></i>São Paulo, Brasil</p>
+      </div>
+      <div>
+        <p>© 2025 Zenite. Todos os direitos reservados.</p>
+        <p> Sua jornada começa aqui.</p>
+        <p> Contato | Suporte | Termos de uso | Política de privacidade</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h1 class="font-semibold text-lg">Siga-nos nas redes sociais</h1>
+        <div class="flex flex-row justify-evenly w-full">
+          <i class="fa-brands fa-facebook-f cursor-pointer"></i>
+          <i class="fa-brands fa-instagram cursor-pointer"></i>
+          <i class="fa-brands fa-youtube cursor-pointer"></i>
+          <i class="fa-brands fa-pinterest-p cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="./js/carrossel.js"></script>
+
+  <script src="./js/carrossel.js"></script>
   <script src="./js/dark.js"></script>
   <script src="./js/sanduiche.js"></script>
 
-  
+
 </body>
+
 </html>
