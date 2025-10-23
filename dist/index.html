@@ -1,132 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zenite - Agência de Viagens</title>
   <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/4e81cabff5.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-white font-sans dark:bg-gray-800 dark:text-white">
+<body class="font-sans">
 
-  <header class="bg-black text-white flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
-  <!-- Logo -->
-  <div class="flex items-center space-x-2 mb-4 md:mb-0">
-    <h1 class="text-2xl font-bold">ZENITE</h1>
-    <div class="w-20">
-      <img src="./images/a01d18f5-34d5-4e24-b0ef-b967beaff0d9.png" alt="">
+  <!-- HEADER -->
+  <nav id="navbar" class="bg-black/95 text-white h-dvh w-full absolute z-50 hidden">
+    <div class="flex w-full justify-end px-5 py-2" id="close-navbar"><a class="font-semibold text-3xl cursor-pointer">x</a></div>
+    <div class="flex flex-col items-center justify-center gap-12 h-full">
+      <a href="#quemSomos" class="hover:text-gray-300 text-xl px-6 item-menu cursor-pointer">Quem Somos</a>
+      <a href="#nossoApp" class="hover:text-gray-300 text-xl px-6 item-menu cursor-pointer">Nosso App</a>
+      <a href="#diferencial" class="hover:text-gray-300 text-xl px-6 item-menu cursor-pointer">Diferencial</a>
     </div>
-  </div>
-
-  <!-- Navegação -->
-  <nav class="flex flex-col md:flex-row md:space-x-10 space-y-2 md:space-y-0 font-semibold items-center">
-    <a href="#" class="hover:text-gray-300 text-2xl px-6">Quem Somos</a>
-    <a href="#" class="hover:text-gray-300 text-2xl px-6">Nosso App</a>
-    <a href="#" class="hover:text-gray-300 text-2xl px-6">Diferencial</a>
   </nav>
+  <header class="bg-gradient-to-b from-neutral-800 to-transparent text-white flex flex-row 
+  items-center justify-between px-4 md:px-8 py-1 fixed z-40 top-0 w-full">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <h1 class="text-2xl font-bold">ZENITE</h1>
+      <div class="w-20">
+        <img class=" md:object-center right-10 md:right-0" src="./images/a01d18f5-34d5-4e24-b0ef-b967beaff0d9.png" alt="">
+      </div>
+    </div>    
 
-  <!-- Botão -->
-  <button class="mt-4 md:mt-0 p-2 border border-gray-400 rounded-md bg-blue-500 text-white font-medium cursor-pointer hover:bg-blue-600" id="btnTheme">Dark/Light</button>
-</header>
+    <!-- Navegação -->
+    <nav id="navbar" class="hidden w-full lg:flex flex-row justify-around font-semibold items-center">
+      <div class="header-menu">
+        <a href="#quemSomos" class="hover:text-gray-300 text-xl px-6 item-menu">Quem Somos</a>
+        <a href="#nossoApp" class="hover:text-gray-300 text-xl px-6 item-menu">Nosso App</a>
+        <a href="#diferencial" class="hover:text-gray-300 text-xl px-6 item-menu">Diferencial</a>
+      </div>
+    </nav>
+    <div class="flex flex-row gap-4">
+    <button class="" id="btnTheme">
+      <i class="fa-solid fa-circle-half-stroke fa-3x"></i>
+    </button>
+    <button class="z-50 lg:hidden" id="open-navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
+    </div>
+  </header>
 
-
-
-
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-white dark:bg-gray-800 dark:text-white">
-
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-10 py-20">
+  <!-- HERO -->
+  <section class="relative h-dvh bg-neutral-400 pt-22 bg-blend-multiply w-full overflow-hidden bg-[url('../images/pexels-freestockpro-1004584.jpg')] bg-no-repeat bg-cover text-white">
+    <div class="mx-auto flex flex-col h-full items-center justify-center px-10 text-center">
       <div class="max-w-xl">
-        <h2 class="text-4xl font-extrabold mb-6 dark:text-white">Viajar nunca foi tão fácil</h2>
-        <p class="text-2xl mb-6 dark:text-white">Descubra. Reserve. Viva</p>
-        <p class="text-lg text-gray-800 dark:text-white  mb-6">
+        <h2 class="text-6xl font-extrabold mb-10 flex items-center justify-center">Viajar nunca foi tão fácil</h2>
+        <p class="text-4xl mb-6 flex items-center justify-center">Descubra. Reserve. Viva</p>
+        <p class="text-2xl mb-6">
           Nossa agência conecta você aos melhores destinos do mundo, com praticidade e confiança.
           Baixe nosso aplicativo e comece a organizar sua próxima aventura hoje mesmo.
         </p>
       </div>
-
-      <div class="flex flex-col items-center space-y-6 mt-10 md:mt-0">
-        <div class="bg-gray-300 flex items-center justify-center">
-        </div>
-
-        <button class="bg-black text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-800">
-          Baixe o aplicativo
-        </button>
-      </div>
+      <button class="hover:bg-black text-white px-8 py-3 rounded-lg text-lg font-semibold 
+      bg-transparent border hover:border-0 cursor-pointer hover:scale-105 duration-200 mt-6">
+        Baixe o aplicativo
+      </button>
     </div>
   </section>
 
-  <!-- Quem Somos -->
-  <section class="relative bg-white py-20 px-8 md:px-16 dark:bg-gray-800 dark:text-white">
-    <div class=""></div>
-
-    <div class="container mx-auto flex flex-col md:flex-row items-center md:space-x-12">
-      <div class="md:w-1/2 z-10">
-        <h2 class="text-3xl font-bold mb-6 text-black dark:text-white">Quem somos</h2>
-        <p class="text-gray-700 dark:text-white mb-4">
+  <!-- QUEM SOMOS -->
+  <section class="w-full relative py-20 px-8 md:px-16 dark:bg-black dark:text-white" id="quemSomos">
+    <div class="shadow-xl/30 dark:shadow-gray-500 dark:border-gray-500 border-2 rounded-2xl p-5 border-gray-200 grid grid-flow-row grid-cols-1 md:grid-cols-2 items-center gap-5">
+      <div class="container mx-auto md:space-x-12">
+        <div class="flex flex-col items-center pb-5 z-10">
+        <h2 class="text-5xl font-bold mb-6 text-black dark:text-white ">Quem somos</h2>
+        <p class="pt-5 text-gray-700 dark:text-white mb-4 text-xl">
           Somos uma agência de viagens digital que transforma sonhos em experiências inesquecíveis.
           Conectamos pessoas a destinos, culturas e aventuras com tecnologia, praticidade e atendimento de qualidade.
         </p>
-        <p class="text-gray-700 dark:text-white mb-4">
+        <p class="text-gray-700 dark:text-white mb-4 text-xl">
           Mais do que deslocar, acreditamos que viajar é criar memórias e viver momentos únicos.
-          Nossa equipe de apaixonados por turismo oferece soluções personalizadas para cada tipo de viagem:
+          Nossa equipe de apaixonados por turismo oferece soluções personalizadas para cada tipo de 
+          viagem:
           em família, a trabalho, romântica ou de aventura.
         </p>
-        <p class="text-gray-700 dark:text-white">
+        <p class="text-gray-700 dark:text-white text-xl">
           Somos parceiros de jornada, oferecendo suporte antes, durante e depois da viagem,
           garantindo tranquilidade e confiança a cada passo do caminho.
         </p>
       </div>
-
-      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-        <div class="container mx-auto bg-gray-500" >
-          
-        </div>
-      </div>
+    </div>
+    <div class=" flex items-center">
+      <img class="h-auto rounded-3xl p-[10px]" src="./images/img2.jpg" alt="">
+    </div>
     </div>
   </section>
 
-  <!-- Nosso App -->
-  <section class="bg-white py-20 px-8 md:px-16 dark:bg-gray-800 dark:text-white">
+  <!-- NOSSO APP -->
+  <section class="bg-white py-20 px-8 md:px-16 dark:bg-black dark:text-white" id="nossoApp">
     <h2 class="text-3xl font-bold mb-10 text-black dark:text-white">Nosso App</h2>
 
     <div class="grid md:grid-cols-3 gap-6">
-      <!-- Destinos -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-sm text-gray-800">
-        <div class="flex items-center space-x-4 mb-4">
-          <h3 class="text-xl font-semibold">Destinos</h3>
-        </div>
-        <p class="text-gray-700">
-          Descubra destinos incríveis no Brasil e no mundo para sua próxima viagem.
-        </p>
+      <div class="bg-gray-600 p-6 rounded-lg shadow-sm text-gray-800">
+        <h3 class="text-xl font-semibold mb-2">Destinos</h3>
+        <p>Descubra destinos incríveis no Brasil e no mundo para sua próxima viagem.</p>
       </div>
 
-      <!-- Reservas -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-sm text-gray-800">
-        <div class="flex items-center space-x-4 mb-4">
-          <h3 class="text-xl font-semibold">Reservas</h3>
-        </div>
-        <p class="text-gray-700">
-          Encontre tudo o que precisa para viajar com facilidade e aproveite ofertas econômicas.
-        </p>
+      <div class="bg-gray-600 p-6 rounded-lg shadow-sm text-gray-800">
+        <h3 class="text-xl font-semibold mb-2">Reservas</h3>
+        <p>Encontre tudo o que precisa para viajar com facilidade e aproveite ofertas econômicas.</p>
       </div>
 
-      <!-- Ferramentas -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-sm text-gray-800">
-        <div class="flex items-center space-x-4 mb-4">
-          <h3 class="text-xl font-semibold">Ferramentas</h3>
-        </div>
-        <p class="text-gray-700">
-          Utilize ferramentas úteis como conversor de moedas, check-list e calendário para planejar melhor sua viagem.
-        </p>
+      <div class="bg-gray-600 p-6 rounded-lg shadow-sm text-gray-800">
+        <h3 class="text-xl font-semibold mb-2">Ferramentas</h3>
+        <p>Utilize ferramentas úteis como conversor de moedas, check-list e calendário para planejar melhor sua viagem.</p>
       </div>
     </div>
   </section>
 
-  <!-- Diferencial -->
-  <section class="bg-white py-20 px-8 md:px-16 dark:bg-gray-800 dark:text-white">
-    <div class="container mx-auto flex flex-col md:flex-row items-center md:space-x-12 dark:text-white">
-      <div class="md:w-1/2">
-        <h2 class="text-3xl font-bold mb-6 text-black dark:text-white">Diferencial</h2>
+  <!-- DIFERENCIAL -->
+  <section class="bg-white py-20 px-8 md:px-16 text-xl dark:bg-black dark:text-white" id="diferencial">
+    <div class="mx-auto flex flex-col md:flex-row">
+      <div class="">
+        <h2 class="text-4xl font-bold mb-6 text-black dark:text-white">Diferencial</h2>
         <p class="text-gray-700 dark:text-white mb-4">
           Mais do que vender viagens, oferecemos experiências completas.
         </p>
@@ -137,13 +127,35 @@
           Com a nossa plataforma, você tem liberdade para explorar o mundo no seu ritmo, do planejamento até a volta para casa.
         </p>
       </div>
-
-      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-      </div>
     </div>
   </section>
 
-<script src="./js/dark.js"></script>
+  <!-- Carrossel -->
+   <div class="relative w-full max-w-xl mx-auto rounded-2xl overflow-hidden">
+  <div id="carousel" class="flex gap-5 transition-transform duration-500 ease-in-out">
+    <!-- Slide 1 -->
+    <div class="w-full flex-shrink-0">
+      <img src="./images/image (2).png" class="w-full rounded-2xl" alt="Slide 1" />
+    </div>
+    <!-- Slide 2 -->
+    <div class="w-full flex-shrink-0">
+      <img src="./images/image (1).png" class="w-full rounded-2xl" alt="Slide 2" />
+    </div>
+    <!-- Slide 3 -->
+    <div class="w-full flex-shrink-0">
+      <img src="./images/image.png" class="w-full rounded-2xl" alt="Slide 3" />
+    </div>
+  </div>
 
+  <!-- Botões -->
+  <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full">‹</button>
+  <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full">›</button>
+</div>
+
+<script src="./js/carrossel.js"></script>
+  <script src="./js/dark.js"></script>
+  <script src="./js/sanduiche.js"></script>
+
+  
 </body>
 </html>
