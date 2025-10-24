@@ -37,7 +37,7 @@
       <div class="header-menu">
         <a href="#quemSomos" class="hover:text-gray-300 text-xl px-6 item-menu">Quem Somos</a>
         <a href="#nossoApp" class="hover:text-gray-300 text-xl px-6 item-menu">Nosso App</a>
-        <a href="#diferencial" class="hover:text-gray-300 text-xl px-6 item-menu">Diferencial</a>
+        <a href="#por-que-escolher" class="hover:text-gray-300 text-xl px-6 item-menu">Diferencial</a>
         <a href="#destinos" class="hover:text-gray-300 text-xl px-6 item-menu">Destinos</a>
       </div>
     </nav>
@@ -121,105 +121,90 @@
   </section>
 
   <!-- DIFERENCIAL -->
-  <section class="bg-white py-20 px-8 md:px-16 text-xl dark:bg-black dark:text-white" id="diferencial">
-    <div class="mx-auto flex flex-col md:flex-row">
-      <div class="">
-        <h2 class="text-4xl font-bold mb-6 text-black dark:text-white">Diferencial</h2>
-        <p class="text-gray-700 dark:text-white mb-4">
-          Mais do que vender viagens, oferecemos experiências completas.
-        </p>
-        <p class="text-gray-700 dark:text-white mb-4">
-          Nossa proposta é simplificar cada etapa da sua jornada, usando a tecnologia para trazer praticidade, segurança
-          e economia.
-        </p>
-        <p class="text-gray-700 dark:text-white">
-          Com a nossa plataforma, você tem liberdade para explorar o mundo no seu ritmo, do planejamento até a volta
-          para casa.
-        </p>
+  <section id="por-que-escolher" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+        Por que escolher a gente?
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+        Descubra o que torna a nossa agência a escolha perfeita para transformar sua viagem em uma experiência
+        inesquecível.
+      </p>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <div
+          class="card opacity-0 translate-y-8 transition-all duration-700 bg-white shadow-lg rounded-xl p-8 border-t-4 border-blue-500">
+          <div class="text-blue-500 text-5xl mb-4">🌍</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Roteiros Personalizados</h3>
+          <p class="text-gray-600">Viagens feitas sob medida para o seu estilo.</p>
+        </div>
+
+        <div
+          class="card opacity-0 translate-y-8 transition-all duration-700 bg-white shadow-lg rounded-xl p-8 border-t-4 border-emerald-500">
+          <div class="text-emerald-500 text-5xl mb-4">🤝</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Atendimento Humanizado</h3>
+          <p class="text-gray-600">Suporte completo antes, durante e depois da viagem.</p>
+        </div>
+
+        <div
+          class="card opacity-0 translate-y-8 transition-all duration-700 bg-white shadow-lg rounded-xl p-8 border-t-4 border-yellow-500">
+          <div class="text-yellow-500 text-5xl mb-4">💸</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Melhor Custo-Benefício</h3>
+          <p class="text-gray-600">Negociamos direto com parceiros para garantir os melhores preços.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CARROSSEL -->
-
-  <!-- 🐾 Seção do Carrossel Infinito -->
-  <section class="relative w-full group py-10 bg-white flex flex-col items-start" id="destinos">
-    <h2 class="text-4xl font-bold mb-6 text-black pb-7 mx-16 w-xl text-start">Conheça destinos incríveis em nossos
-      conteúdos exclusivos</h2>
-
-    <!-- Botão Esquerda -->
-
-    <button id="btn-esquerda"
-      class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow z-50
-           opacity-0 pointer-events-none transition-opacity duration-200 group-hover:opacity-100 group-hover:pointer-events-auto"
-      aria-label="Anterior">
-      &#10094;
-    </button>
-
-    <!-- Faixa de imagens -->
-    <div id="carrossel" class="flex isolate no-scrollbar overflow-x-clip z-0 scroll-smooth px-0 gap-4 relative">
-      <!-- Cada imagem dentro de um wrapper que permite transbordar -->
-      <div class="relative flex-shrink-0 z-50 ">
-        <img src="./images/aruba.avif"
-          class="w-[360px] h-[230px] rounded-2xl duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+  <div id="images" class="mx-10 my-16 flex flex-col items-center gap-12">
+    <h1 class="font-bold text-3xl">Conheça destinos incríveis em nossos conteúdos exclusivos</h1>
+    <div class="columns-3">
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30" src="./images/aruba.avif" alt="">
+        <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/balneario.jpg"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30 aspect-video object-cover" src="./images/buenosaires.jpg" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/buenosaires.jpg"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30 aspect-video object-cover" src="./images/disney.jpg" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/rio.jpg"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover" src="./images/fortaleza.webp" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/psg.avif"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30" src="./images/grecia.png" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <!-- Duplicadas para loop infinito -->
-      <div class="relative flex-shrink-0">
-        <img src="./images/porto.jpg"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover " src="./images/balneario.jpg" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/maceio.jpg"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30" src="./images/rio.jpg" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/grecia.png"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30" src="./images/maceio.jpg" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/fortaleza.webp"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30" src="./images/porto.jpg" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
-
-      <div class="relative flex-shrink-0">
-        <img src="./images/disney.jpg"
-          class="w-[360px] h-[230px] object-cover rounded-2xl transition-transform duration-300 hover:scale-y-125 hover:z-50 overflow-y-visible" />
+      <div class="relative flex items-end">
+        <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
+          class="mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover" src="./images/psg.avif" alt=""> <div class="bg-black/20 w-full h-[172px] mb-5 rounded-xl absolute"></div>
       </div>
     </div>
+  </div>
 
-    <!-- Botão Direita -->
-
-    <button id="btn-direita"
-      class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow z-50 opacity-0 pointer-events-none transition-opacity duration-200 group-hover:opacity-100 group-hover:pointer-events-auto"
-      aria-label="Próximo"> &#10095;
-    </button>
-  </section>
-
-  <div id="newsletter" class="grid grid-cols-1 place-content-evenly lg:grid-cols-2 mx-6 lg:mx-10 rounded-xl bg-gray-200">
+  <div id="newsletter"
+    class="grid grid-cols-1 place-content-evenly lg:grid-cols-2 mx-6 lg:mx-10 rounded-xl bg-gray-200">
     <div class="px-8 lg:px-16 py-8 lg:py-20 gap-7 flex flex-col">
       <h1 class="text-blue-900 font-bold text-2xl">Assine nossa newsletter e receba as ofertas da Zenite</h1>
       <div class="flex flex-col md:flex-row gap-3">
