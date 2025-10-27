@@ -5,3 +5,8 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.gradient-certo {
+    background-blend-mode: color; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--tw-gradient-stops);
+}
