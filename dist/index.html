@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/4e81cabff5.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="font-sans dark:bg-black">
+<body class="dark:bg-black font-poppins">
 
   <!-- HEADER -->
   <nav id="navbar" class="bg-black/95 text-white h-dvh w-full absolute z-50 hidden">
@@ -21,8 +21,8 @@
       <a href="#diferencial" class="hover:text-gray-300 text-xl px-6 item-menu cursor-pointer">Diferencial</a>
     </div>
   </nav>
-  <header class="bg-gradient-to-b from-neutral-800 to-transparent text-white flex flex-row 
-  items-center justify-between px-4 md:px-8 py-1 fixed z-40 top-0 w-full">
+  <header class="bg-gradient-to-b from-neutral-900 via-neutral-700 to-transparent text-white flex flex-row 
+  items-center justify-between p-4 md:px-8 py-1 fixed z-40 top-0 w-full">
     <!-- Logo -->
     <div class="flex items-center space-x-2">
       <h1 class="text-2xl font-bold">ZENITE</h1>
@@ -53,17 +53,17 @@
   <section
     class="relative h-dvh bg-neutral-400 pt-22 bg-blend-multiply w-full overflow-hidden bg-[url('../images/pexels-freestockpro-1004584.jpg')] bg-no-repeat bg-cover text-white">
     <div class="mx-auto flex flex-col h-full items-center justify-center px-10 text-center">
-      <div class="max-w-xl">
-        <h2 class="text-6xl font-extrabold mb-10 flex items-center justify-center">Viajar nunca foi tão fácil</h2>
+      <div class="max-w-2xl">
+        <h2 class="text-6xl font-extrabold mb-10 flex items-center justify-center text-balance leading-17">Viajar nunca foi tão fácil</h2>
         <p class="text-4xl mb-6 flex items-center justify-center">Descubra. Reserve. Viva</p>
-        <p class="text-2xl mb-6">
+        <p class="text-2xl mb-6 text-balance">
           Nossa agência conecta você aos melhores destinos do mundo, com praticidade e confiança.
           Baixe nosso aplicativo e comece a organizar sua próxima aventura hoje mesmo.
         </p>
       </div>
       <button class="hover:bg-black text-white px-8 py-3 rounded-lg text-lg font-semibold 
-      bg-transparent border hover:border-0 cursor-pointer hover:scale-105 duration-200 mt-6">
-        Baixe o aplicativo
+      bg-gray-800  hover:border-0 cursor-pointer hover:scale-105 duration-200 mt-6">
+        Baixe o aplicativo <i class="fa-regular fa-circle-down animate-bounce ml-1 relative top-0.5"></i>
       </button>
     </div>
   </section>
@@ -120,7 +120,7 @@
           <p class="text-xl text-gray-700 dark:text-neutral-300">Encontre tudo o que precisa para viajar com facilidade e aproveite ofertas econômicas.</p>
         </div>
         <div class="col-span-2 flex items-center pt-5 justify-evenly">
-          <img class= "w-16 md:w-32 h-auto" src="./images/reserva.png" alt="">
+          <img class= "w-24 md:w-28 h-auto" src="./images/reserva.png" alt="">
         </div>
       </div>
 
@@ -131,7 +131,7 @@
           <p class="text-xl text-gray-700 dark:text-neutral-300">Utilize ferramentas úteis como conversor de moedas, check-list e calendário para planejar melhor sua viagem.</p>
         </div>
         <div class="col-span-2 flex items-center pt-5 justify-evenly">
-          <img class="w-32 h-auto" src="./images/ferramentas.png" alt="">
+          <img class="w-28 h-auto" src="./images/ferramentas.png" alt="">
         </div>
       </div>
     </div>
@@ -175,56 +175,56 @@
 
 <!-- Destinos -->
 
-  <div id="destinos" class="mx-10 my-16 flex flex-col items-center gap-12">
+  <div id="destinos" class="mx-10 my-16 flex flex-col items-center gap-12 ">
     <h1 class="font-bold text-3xl dark:text-white">Conheça destinos incríveis em nossos conteúdos exclusivos</h1>
-    <div class="columns-3">
+    <div class="columns-1 md:columns-2 lg:columns-3">
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Aruba</h1><img
-          class="mb-5 rounded-xl shadow-xl/30" src="./images/aruba2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30" src="./images/aruba2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Buenos Aires</h1><img
-          class="mb-5 rounded-xl shadow-xl/30 aspect-video object-cover" src="./images/buenos2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30 aspect-video object-cover" src="./images/buenos2.png" alt=""> <div class="mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Disney</h1><img
-          class="mb-5 rounded-xl shadow-xl/30 aspect-video object-cover" src="./images/disney2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30 aspect-video object-cover" src="./images/disney2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Fortaleza</h1><img
-          class="mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover" src="./images/fortaleza2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover" src="./images/fortaleza2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex object-center items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Santorini</h1><img
-          class="mb-5 rounded-xl shadow-xl/30 flex object-center" src="./images/grecia2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30 flex object-center" src="./images/grecia2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Balneário</h1><img
-          class="mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover " src="./images/balneario2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover " src="./images/balneario2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Rio de Janeiro</h1><img
-          class="mb-5 rounded-xl shadow-xl/30" src="./images/rio2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30" src="./images/rio2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Maceió</h1><img
-          class="mb-5 rounded-xl shadow-xl/30" src="./images/maceio2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30" src="./images/maceio2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Porto Seguro</h1><img
-          class="mb-5 rounded-xl shadow-xl/30" src="./images/porto2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30" src="./images/porto2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
       <div class="relative flex items-end">
         <h1 class="absolute mb-5 ps-5 pb-5 text-white font-semibold text-3xl z-50">Paris</h1><img
-          class="mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover" src="./images/paris2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
+          class=" w-full mb-5 rounded-xl shadow-xl/30 aspect-3/4 object-cover" src="./images/paris2.png" alt=""> <div class="w-full mb-5 rounded-xl absolute"></div>
       </div>
     </div>
   </div>
 
   <div id="newsletter"
-    class=" grid grid-cols-1 place-content-evenly lg:grid-cols-2 mx-6 lg:mx-10 rounded-xl bg-gray-200">
+    class=" grid grid-cols-1 place-content-evenly lg:grid-cols-2 mx-6 lg:mx-10 rounded-xl bg-gray-200 dark:bg-neutral-800 shadow-xl/30 dark:shadow-gray-500 dark:border-gray-500 border-2 border-gray-200">
     <div class="px-8 lg:px-16 py-8 lg:py-20 gap-7 flex flex-col">
-      <h1 class="text-blue-900 font-bold text-2xl">Assine nossa newsletter e receba as ofertas da Zenite</h1>
+      <h1 class="text-blue-900 dark:text-blue-400 font-bold text-2xl">Assine nossa newsletter e receba as ofertas da Zenite</h1>
       <div class="flex flex-col md:flex-row gap-3">
         <input type="text"
           class="border ps-3 py-1 md:py-0 border-gray-400 bg-white placeholder:text-gray-700 rounded-md"
@@ -234,7 +234,7 @@
           placeholder="E-mail">
         <button class="bg-sky-300 text-black font-semibold py-2 md:py-3 px-4 rounded-xl">Assinar</button>
       </div>
-      <p class="text-sm items-center"><input type="checkbox"> Concordo em receber comunicações, ofertas e compartilhar
+      <p class="text-sm items-center dark:text-neutral-300"><input type="checkbox"> Concordo em receber comunicações, ofertas e compartilhar
         meus dados pessoais com a Zenite. Para mais informações, consulte as <span
           class="cursor-pointer hover:underline text-blue-500">políticas de privacidade</span>.</p>
     </div>
